@@ -1,0 +1,124 @@
+*{
+    font-family: Garamond, "Times New Roman", serif;
+}
+
+@media only screen and (max-width: 600px) {
+* {
+    margin:0 10px 5px 10px;
+}
+}
+
+@media only screen and (min-width: 768px) {
+    *{
+        margin: 0 15px 5px 15px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    * {
+    margin: 0 50px 5px 50px;
+    }
+} 
+
+.peal-open-button{
+    position:fixed;
+    z-index: 1;
+    left:0;
+}
+
+.sidebar{
+    width:20%;
+    position:fixed;
+    z-index: 1;
+    background-color: rgb(238, 254, 252);
+    left:0;
+    top:3px;
+    border-radius: 5px;
+}
+
+.sidebar-link{
+    display: block;
+    font-size: smaller;
+}
+
+#back-to-homepage{
+    font-size: x-large;
+}
+
+.author{
+    font-weight: bold;
+}
+
+.indent{
+    text-indent: 2em;
+}
+
+.story_break{
+    text-align: center;
+}
+
+.author_highlight{
+    font-weight: bold;
+}
+
+#GRIEVANCE p{
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+a:hover{
+    background-color: rgb(213, 235, 232);
+    border-radius: 5px;
+}
+
+h1{
+    text-align: center;
+}
+
+.front_mini_info{
+    text-align: right;
+}
+
+.front_info_bold{
+    font-weight: bold;
+}
+
+ul li::marker{
+    content:none;
+}
+
+caption{
+    font-size:xx-large;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+}
+
+iframe{
+    display:block;
+    margin:0 auto;
+}
+
+table{
+    margin:0 auto;
+}
+
+.peal-button {
+    margin:5px;
+    width:40px;
+    height:40px;
+    font-size:large;
+    background-color: rgb(213, 235, 232);
+    border-radius: 5px;
+}
+
+.peal-button:hover{
+    background-color: rgb(185, 207, 205);
+}

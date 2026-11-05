@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Peal: Volume 34</title>
+  <link href="The Peal Vol34 Style.css" rel=stylesheet>
+</head>
+
+<body>
+    <div class="peal-container peal-teal">
+    <h1><button class="peal-button peal-open-button" onclick="peal_open()">☰</button></h1>
+    </div>
+
+    
+    <div class="sidebar bar-block border-right" style="display:none" id="Vol34-sidebar">
+        <button onclick="peal_close()" class="sidebar-link large">Close X</button>
+            <a href="The Peal Homepage.html" id="back-to-homepage">Back to Homepage</a>
+            <br>
+            <br>
+            <h2>Contents</h2>
+            <a href="#Masthead" class="sidebar-link peal-button">Masthead</a>
+                    
+            <a href="#Helenes_Whisper" class="sidebar-link peal-button">Helene's Whisper</a>
+                
+            <a href="#Grew_up_hard" class="sidebar-link peal-button">Grew up hard, fell off harder</a>
+                
+            <a href="#House_of_Straw" class="sidebar-link peal-button">House of Straw</a>
+                
+            <a href="#Kits" class="sidebar-link peal-button">Kits</a>
+
+            <a href="#Boy_Girl" class="sidebar-link peal-button">Boy/Girl</a>
+                
+            <a href="#Joyride" class="sidebar-link peal-button">Joyride</a>
+                
+            <a href="#Coltrane" class="sidebar-link peal-button">What Was it Coltrane?</a>
+                
+            <a href="#Glory_of_Innocence" class="sidebar-link peal-button">The Glory of Innocence</a>
+                
+            <a href="#Prison_Architecture" class="sidebar-link peal-button">Prison Architecture</a>
+                
+            <a href="#Snowy_Footprints" class="sidebar-link peal-button">Snowy Footprints</a>
+                
+            <a href="#Our_House" class="sidebar-link peal-button">Our House</a>
+                
+            <a href="#GRIEVANCE" class="sidebar-link peal-button">GRIEV_ANCE</a>
+                
+            <a href="#Ode_to_Cicadas" class="sidebar-link peal-button">An Ode to Cicadas in the Summer Heat</a>
+                
+            <a href="#Solar_Systems" class="sidebar-link peal-button">Solar Systems</a>
+                
+            <a href="#music_muse" class="sidebar-link peal-button">music/muse</a>
+                
+            <a href="#I_fear" class="sidebar-link peal-button">I fear</a>
+                
+            <a href="#GIRL" class="sidebar-link peal-button">GIRL</a>
+                
+            <a href="#SNOWBALLIN" class="sidebar-link peal-button">SNOWBALLIN</a>
+                
+            <a href="#Dancing" class="sidebar-link peal-button">Dancing to "In My Room" by Frank Ocean</a>
+                
+            <a href="#Delicate_Things" class="sidebar-link peal-button">Does God make delicate things just to watch them get hurt?</a>
+            
+            <a href="#About_Contributors" class="sidebar-link peal-button">About the Contributors</a>
+        
+            <a href="#About_Peal" class="sidebar-link peal-button">About The Peal</a>
+    </div>
+
+    <header class="front_page_info">
+        <img src="https://live.staticflickr.com/65535/55626424806_58281996b2_b.jpg" alt="Picture of the front cover of the Peal Fall 2024-Spring 2025 edition" width="500">
+        <h1>The Peal</h1>
+        <section class="front_mini_info">
+            <p class="front_info_bold">Volume 34</p>
+            <p>Fall 2024-Spring 2025</p>
+            <p class="front_info_bold">Warren Wilson College</p>
+            <p>Swannanoa, NC</p>
+        </section>
+
+        <hr></hr>
+    </header>
+
+    <div class="peal-container">
+    <section class="contributors_page">
+        <h2>The Editors</h2>
+        <ul>
+            <li>Emily Cobb</li>
+            <li>Naoh Hoyle</li>
+            <li>Molly Ryan-O'Flaherty</li>
+            <li>Leo Sanders</li>
+            <li>Quinn Wolfe</li>
+        </ul>
+
+        <h2>Advisor</h2>
+        <p>Delicia Daniels</p>
+
+        <h2>Cover Art</h2>
+        <p>Leo Sanders</p>
+
+        <h2>Illustrations</h2>
+        <p>Noah Hoyle</p>
+    </section>
+
+    <hr></hr>
+
+    <section class="table_of_contents">
+        <table>
+            <caption>Contents</caption>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                </tr>
+            </thead>
+                
+            <tbody>
+                <tr>
+                    <td><a href="#Masthead">Masthead</a></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td><a href="#Helenes_Whisper">Helene's Whisper</a></td>
+                    <td>Bella Sosa</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#Grew_up_hard">Grew up hard, fell off harder</a></td>
+                    <td>Anna Sauerbrey</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#House_of_Straw">House of Straw</a></td>
+                    <td>Rowan Ts'eh Berry-Foster</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#Kits">Kits</a></td>
+                    <td>Maddy Clements</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#Boy_Girl">Boy/Girl</a></td>
+                    <td>Ruby Karyo</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#Joyride">Joyride</a></td>
+                    <td>Piper Gross</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#Coltrane">What Was it Coltrane?</a></td>
+                    <td>Eliot Heminway</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#Glory_of_Innocence">The Glory of Innocence</a></td>
+                    <td>Anna Sauerbrey</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#Prison_Architecture">Prison Architecture</a></td>
+                    <td>Tyson Lewis</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#Snowy_Footprints">Snowy Footprints</a></td>
+                    <td>Trevor Nail</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#Our_House">Our House</a></td>
+                    <td>Andaluna Malki</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#GRIEVANCE">GRIEV_ANCE</a></td>
+                    <td>Ruby Karyo</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#Ode_to_Cicadas">An Ode to Cicadas in the Summer Heat</a></td>
+                    <td>Piper Gross</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#Solar_Systems">Solar Systems</a></td>
+                    <td>Ivy Sauter-Sargent</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#music_muse">music/muse</a></td>
+                    <td>Will Finch</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#I_fear">I fear</a></td>
+                    <td>Andaluna Malki</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#GIRL">GIRL</a></td>
+                    <td>Ruby Karyo</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#SNOWBALLIN">SNOWBALLIN</a></td>
+                    <td>Juliet</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#Dancing">Dancing to "In My Room" by Frank Ocean</a></td>
+                    <td>Kai Meyer</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#Delicate_Things">Does God make delicate things just to watch them get hurt?</a></td>
+                    <td>Anna Sauerbrey</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#About_Contributors">About the Contributors</a></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td><a href="#About_Peal">About The Peal</a></td>
+                    <td></td>
+                </tr>
+            </tbody> 
+        </table>
+    </section>
+
+    <hr></hr>
+
+    <section id="Masthead">
+        <h2 class="title">Letter from the Editors</h2>
+        <p>Welcome to the 2024-2025 edition of The Peal. This semester has been full of grief as we have all faced damage from Hurricane Helene. With its mighty winds, Hurricane Helene blew through Swannanoa, but that did not stop the creative minds at Warren Wilson. Despite the instability, we, the editors of the Peal, have worked hard o assemble this collection.</p>
+        <p>This edition of The Peal has a musical theme, the first of its kind. Music has a way of seeping into everything we do, from the soft notes of a piano to the rhythmic flutters of turning a page in a book. This collection showcases how we interact with music and how it affects us</p>
+        <p>A huge thank you to everyone who submitted pieces and to anyone who has created anything during these troubling times. this is only a fraction of the incredible things the Warren Wilson College communiity creates and we love seeing every single piece.</p>
+        <p>Sincerely, <br> The Peal Editors</p>
+    </section>
+
+    <hr></hr>
+
+    <section id="Helenes_Whisper">
+        <h2 class="title">Helene's Whisper</h2>
+        <p class="author">Bella Sosa</p>
+
+        <p>When Helene roared from the coast, <br>
+        I felt the air tighten, <br>
+        heard her breath howl through every hollow bone. <br>
+        She came like a hand across the earth, <br>
+        turning rivers into monsters, <br>
+        and my mother never left.</p>
+
+        <p>She was supposed to return after Family Weekend,<br> 
+        but the sky bent her path into silence, <br>
+        a signal snuffed out by storm winds as she drove deeper into the eye. <br>
+        No word from her.<br>
+        Only the blank stare of my phone as if the world had folded in on itself,<br>
+        leaving me hollow.</p>
+
+        <p>When news came, <br>
+        it was of her in an attic, <br> 
+        cans of beans, <br>
+        peanut butter crackers, <br>
+        water licking at the walls like a hungry mouth. <br>
+        She'd climbed above the flood, <br>
+        but no one could tell me where the water would end.</p>
+
+        <p>She had found a payphone on a mountain- <br>
+        her voice faint, like something pulled <br>
+        from the edges of a dream- <br>
+        and said, "He might come get us. I don't know. <br>
+        This is all I have for now." <br>
+        Static filled the gaps where I wanted to ask if she was ok.</p>
+
+        <p>Three days without power, <br>
+        three days without the sound of running water, <br>
+        and when she arrived mud caked and tired- <br>
+        She told me to pack up and leave, <br>
+        I couldn't understand it,</p>
+
+        <p>the abruptness of her words, <br>
+        as if the storm had shifted something inside her, <br>
+        and now everything had to be abandoned. <br>
+        But I couldn't. <br>
+        My life had tangled itself in this place, <br>
+        its people were rooted in my chest. <br>
+        "I need time," I said, <br>
+        and she promised nothing.</p>
+
+        <p>The next day, she tried to return, <br>
+        hitchhiking back through broken roads, <br>
+        but the route had vanished beneath her feet, <br>
+        and instead, <br>
+        she was swallowed by Asheville's airport, <br>
+        leaving me to find my own escape.</p>
+
+        <p>I remember the journey- <br>
+        the bodies pulled from floodwaters, <br>
+        the earth torn apart by winds stronger than anything I had ever known. <br>
+        Uprooted trees leaned against the sky like crooked hands trying to hold it back.</p>
+
+        <p>When I got home, 
+        I couldn't eat. <br>
+        Food tasted like damp wood, like grief. <br>
+        Water ran through faucets, and it was a knife, <br>
+        its sound unraveling me, as if the storm had left its voice <br>
+        in the pipes beneath our house.</p>
+
+        <p>Now, even in quiet rooms, <br>
+        I can hear Helene in the walls. <br>
+        The floods never really recede. <br>
+        They only find new places to rise. </p>
+    </section>
+
+    <hr></hr>
+
+    <section id="Grew_up_hard">
+        <h2 class="title">Grew up hard, fell off harder</h2>
+        <p class="author">Anna Sauerbrey</p>
+        <p>There is a clarinet in my childhood bedroom. <br>
+        It lives in a nice brown case, lined with old, <br>
+        Crusty velvet saturated with spit. Somehow <br>
+        There is no association to middle school band, <br>
+        To the glob of wax pressed over my braces <br>
+        So I didn’t cut my lower lip, my phone hidden <br>
+        Behind a music stand and open to a game, <br>
+        Scales performed clumsily on a chipped reed, <br>
+        Forged practice logs, the cold vibration <br>
+        In my chest before we went on stage, my dress <br>
+        Too thick and warm around my arms <br>
+        But my legs were so cold they tinged blue, <br>
+        Unable to shake the feeling. <br>
+        I do not look at the instrument. <br>
+        It is shoved in the bottom of a cabinet <br>
+        In the corner of the room, out of sight <br>
+        And waiting for some impossible future. </p>
+        <img src="https://live.staticflickr.com/65535/55620393304_a12e2ed49b_n.jpg" alt="A clarinet breaking down">
+    </section>
+
+    <hr></hr>
+
+    <section id="House_of_Straw">
+        <h2 class="title">House of Straw</h2>
+        <p class="author">Rowan Ts'eh Berry-Foster</p>
+        <p class="indent">It snowed nearly every day I saw Conchobhar. The air was thick  with pre-precipitation, great webs of ice from tree to tree. I was newly  lonely, stranded for a month on my mother’s farm, a half-hour to the clos est town. He lived down the road. I was tired of waiting for my girlfriend  to notice my self-defying acts of martyrdom. I fed him undercooked chick en and he brought me terrible boxed wine. I bribed my little brother with  the PlayStation to stay in his room, and I didn’t tell my parents, who were  off on a romantic, productive trip for my mother’s work. </p>
+        
+        <p class="indent">I took off my shirt before he reached for it. He was the third man  I’d slept with, and I was convinced the rigidness of men’s bodies, the smell  of their sweat, the universal cowlick at the back of their heads was nothing  to gawk at anymore. I considered myself worldly, able to slip in and out of  bed without creaking the springs, able to ignore the bust of a dictator in  his bedroom, able to trail down the stairs and drink a beer with his mother  on the sofa. </p>
+        
+        <p class="indent">Before we met, he told me he would be leaving for Colombia in  a month’s time. It was, in part, to guilt me. I’d stopped responding to his  messages out of the blue, months ago, and he had bought a ticket in retri bution, to prove he needed no one. I faced this timeline with grim deter mination. If something was to be taken from me, knowing would alleviate  my helplessness, surely. </p>
+        
+        <p class="indent">We watched my poetry lectures in my bed, heads swiveling to  double, triple-check that my laptop was still muted. He recounted stories  of ladies he’d slept with when using a Couch-Surfing app in Taiwan, men  who’d taken him by the arm in bars, and the two women he’d loved: a  blonde, french woman whom he’d left behind when he came back to the  states, and a fellow tour guide in Alaska. </p>
+        
+        <p class="indent">When he wasn’t rubbing my back he was telling me stories that  seemed at best dubiously true. Getting so drunk he could only speak Span ish, a Craigslist ad posted by a couple that seemed suspiciously like they  were going to kidnap him, an older woman who’d tried to persuade him  and his friend to let her touch them while they slept. </p>
+        
+        <p class="indent">He told me the most beautiful part of my body was my shoulders.  My parents loved him. I got terribly drunk and ruined a game of spades  with my family one night, and he put me to bed like I was a small, disgruntled child. This too I liked, the five years that lay between us. </p>
+        
+        <p class="story_break">𓃦𓃥</p>
+        
+        <p class="indent">My parents were the same age as Conchobhar and I when they  met. My mother was twenty-four, and my father was nineteen. My mother  was married to a corrupt public defender who she had a child with. They  met at a poetry competition where my mother read Ginsberg. She won  first, and my father second. He waded across the room, murmured some thing about her beauty and brilliance, reached for her hand, encased it in  his, and kissed his own knuckles. That motherfucker. </p>
+        
+        <p class="indent">For months after that, they thought about one another. My mother  was engaged in her legal battle with her current husband, and my father  was out of the picture, asking around about her and being met with re minders of her marriage and child. </p>
+        
+        <p class="indent">After trial and tribulation, he convinced a mutual friend to hand  over my mother’s number. They planned to meet at his house, the scrawl ing boy apartment that it was, complete with several roommates. She  offered to drive to the liquor store, but halfway there he admitted he had  beer at home. As soon as they closed the front door behind them, the  friend of a girl wronged by my father berated him from the couch. They  took it outside. My mother watched from his window. </p>
+        
+        <p class="indent">He came back, explanations ready. Mom revealed a joint, but he  shrugged something about probation. There was nothing else to do. She  took his hand and put it low on her stomach. She’d never liked kissing.  She took his hand and put it low, low on her stomach. Held it there. The  room was dark. “This,” she said, “is my favorite part.” </p>
+        
+        <h3 class="subtitle">HOUSE OF STICKS</h3>
+        
+        <p class="indent">Conchobhar left for Colombia. My mother urged me to stay in  touch with him. We texted some, and then we didn’t. One night in late  January, I called him from outside a friend’s apartment, drunk and love sick, eager to dip my head into the Lethe and forget everything but his  hold on my ankle. He didn’t pick up. </p>
+        
+        <p class="story_break">𓃦𓃥</p>
+        
+        <p class="indent">After my parents spent that first night together, my mother’s  then-husband forbade her from seeing my father. He showed up furious at  my father’s door. He threatened to bring claims of infidelity into the court  case, though mom had known for years that his clients sucked him off under his desk. </p>
+        
+        <p class="indent">Months go by. My father is riding his bike to work when he sees  my mother driving. He runs over to the window, breathless. Her hair is  cropped to her neck. “I was bringing this to your house, just now,” she  gasps. She hands him her shorn hair through the car window. </p>
+        
+        <h3 class="subtitle">HOUSE OF BRICK</h3>
+        
+        <p class="indent">I slept with other people. When Conchobhar messaged me, I ex tracted only enough personality to keep him interested and injected it into  late one sentence replies. He came home for his birthday, so he stopped  by my dorm. He wore a baseball cap, which repulsed me. I worried my  friends would see him enter my room, so I rushed him from the side door  quickly, hardly looking at him. </p>
+        
+        <p class="indent">He brought me fried catfish, which sat limply in its styrofoam cas ket as I told him I was no longer interested. He cried, and I felt relieved at  the sogginess of it. There was no beauty to latch onto.  </p>
+        
+        <p class="indent">“What did you think would happen?”  </p>
+        
+        <p class="indent">He wiped a string of snot on his sleeve. “I don’t know, I just  thought that I would come up here and like, charm you? That I would be  charming? And you’d invite me in…” </p>
+        
+        <p class="indent">He trailed off, looking at the wine bottle sticking out of his bag. I  sat on my bed, poised. </p>
+        
+        <p class="indent">“And then what?” I asked, “We would have sex? And then...”  He raked his hand through his hair and looked around the room.  “Yeah, probably. I thought, and I know it’s stupid now–,” his voice trembled, “...that I would stay a few nights, that you would want me to.” </p>
+        
+        <p class="indent">“And then you would leave again.” </p>
+        
+        <p class="indent">He nodded. He had the decency to look ashamed.  </p>
+        
+        <p class="indent">When he leaned to kiss me at the door I looked straight down at  his shoes, and his lips crushed wetly against my forehead. </p>
+        
+        <p class="story_break">𓃦𓃥</p>
+        
+        <p class="indent">On Conchobhar’s 26th birthday, I texted him on Facebook, just to  hold the words in my mouth, to click on his name. We talked about dogs  and made allusions to our romantic entanglements. He was in Mongolia,  attempting to “coax a house dog to drop her collar.” This meant he was trying to seduce a woman out of a relationship and into his bed. It prob ably worked. He sent two songs about me he’d written, and both of them  were beautiful and mean. I didn’t tell him I wanted to taste his mouth again. I said happy birthday. It was snowing where he was.  I closed my eyes and imagined it covering me. Only the tip of my  boots peeked over the snow. Conchobar made his way from the house to  me. He scraped the snow from my head, and I pretended to be asleep.  “Dead! They’re dead!” he howled. He pinched my cheek as I kept  my face slack. </p>
+        
+        <p class="indent">I opened my eyes a sliver and saw him rolling a snowball. I bolted  upright, tackled him into the snow, gloves wet and freezing as I slipped  them under his scarf. He squealed for mercy.  </p>
+        
+        <h3 class="subtitle">HOUSE OF EARTH</h3>
+        
+        <p class="indent">Radio Silence. The following summer, against my better judgment,  I looked Conchobar up on the Couchsurfing app. Still in Mongolia. Some one who stayed with him wrote it was like staying with their own brother.  I burst into tears at the food pantry, holding cases of great value mac and  cheese. I bit my nails into nothing at the office, staring at his profile pictures. His hair had grown to his shoulders, and he wore it tied back, like  my dad does, like my partner does. </p>
+        
+        <p class="story_break">𓃦𓃥</p>
+        
+        <p class="indent">In November, Mom calls and says she and my dad are separating.  Two weeks later, when I ask if that is in fact, happening, she says, “Not  today.” So I delete the playlist I’d made about them. No more sitting on  my living room couch and sobbing to Fiona Apple’s “Across the Universe”  Music Video. </p>
+        
+        <p class="indent">Instead, I watch videos Conchobhar sent me from his childhood  bedroom, from Colombia, from Alaska, from Mongolia. In my favorite he’s  outside a hostel, socked feet on brick, phone propped on a plastic chair.  He almost sings my name, but stops himself. The song could be about any  pretty girl. I feel safe in this obscuration.  </p>
+        
+        <p class="indent">He’s coming back home this December, and though I’ve told him I  would like to see him, I know I won’t go through with it. I am nothing if  not oppositional.  </p>
+        
+        <p class="indent">I think about the last time I saw him, in his truck, the window  rolled down to look at me waving. On the way to Charlotte to fly to Co lumbia, already there mentally, the sun clear in his eyes. His cheeks were  pink. His nose was red. He was no wolf. </p>
+    </section>
+
+    <hr></hr>
+
+    <section id="Kits">
+        <h2 class="title">Kits</h2>
+        <p class="author">Maddy Clements</p>
+        <p>In a hidden alleyway, two children in a small crowd clap for a  nearby musician. </p>
+        <p>Hush! </p>
+        <p>Do you hear the toll bells, ringing <br>
+            across the valley far? <br>
+            Do you have a coin to spare, or two <br>
+            to make your entrance sure.  </p>
+
+        <p>Did you see the tuft of ear from the  <br>
+            grey rabbit on the bridge? <br>
+            You can’t get too close to pearly <br>
+            teeth, or you will force its hand. </p>
+
+        <p>Don’t you look under the stones,  <br>
+            If hunger drives you raving <br>
+            The rabbit beat you to the meal <br>
+            hollow, fearful, manic,  <br>
+            <span>desperate, unfed, craving… </span><br>
+            <span>until </span></p>
+
+        <p>the young will not be seen again.  <br>
+            buried in ground, then buried in gut,  <br>
+            the downpour of rain washing away <br>
+            the crime of the Elder.  </p>
+
+        <p>Hearken, children, for you are the Kits <br>
+            the little ones under the ground. <br>
+            Take your hands, dig up and out <br>
+            before your hearts take the hit.  </p>
+
+        <p>Strike a flame, flip a coin <br>
+            into the Well instead of bells.  <br>
+            Bite away at the chains that bind you, <br>
+            With your rabbit teeth <br>
+            they’re sharp as Hell.  </p>
+
+        <p>A few seconds later, a pair of armed guards appear and haul the  musician away by the elbows. The crowd claps heartily. For whom,  it is unclear. </p>
+        <img src="https://live.staticflickr.com/65535/55624504908_8199b9a4d4_n.jpg" alt="drawing of two tan rabbits">
+    </section>
+
+    <hr></hr>
+
+    <section id="Boy_Girl">
+        <h2 class="title">Boy/Girl</h2>
+        <p class="author">Ruby Karyo</p>
+        <p>Lately, focus has been detrimental to his soul. </p> 
+        <p>Like a heart attack without its symptoms.  </p>
+        <p>Like art, he is lost in trees.  </p>
+        <p>Like a spinal ball  </p>
+        <p>He gravitates to the melancholy sphere of untold stories.  The writer of his losses in the wind  </p>
+        <p>Kindly guide him on the missing piece of the Chinese corset.  Laced up to feel like a little girl in a boy’s dress! </p>
+    </section>
+
+    <hr></hr>
+
+    <section id="Joyride">
+        <h2 class="title">Joyride</h2>
+        <p class="author">Piper Gross</p>
+        <img src="https://live.staticflickr.com/65535/55624371461_866b5b9b76.jpg" alt="comic"> 
+    </section>
+
+    <hr></hr>
+    
+    <section id="Coltrane">
+        <h2 class="title">What Was it Coltrane?  </h2>
+        <p class="author">Eliot Heminway</p>
+        <p>Dad told me about you. </p>
+
+        <p>A several sequence though... <br>
+        Yes it picked up and dashed, <br>
+        Thumb tapped across <br>
+        And crescented out of my late night bluetooth.</p>
+
+        <p>He said fame, Davis and something else. </p>
+
+        <p>An influential carrying <br>
+        No it was not just holding, but <br>
+        Running with all magic capacity <br>
+        And alive it —what? <br>
+        Alive it was. </p>
+
+        <p>He said nothing of this. </p>
+
+        <p>So who knew it really <br>
+            —I mean what? <br>
+            Im pausing —to pause means I’ve forgotten.</p> 
+
+        <p>What was it Coltrane? </p>
+
+        <p>Because dad told me about you.</p>
+    </section>
+
+    <hr></hr>
+
+    <section id="Glory_of_Innocence">
+        <h2 class="title">The Glory of Innocence</h2>
+        <p class="author">Anna Sauerbrey</p>
+        <p>When I first met you, you were screaming <br>
+        for your mother even though she was right there. <br>
+        Her paleness must have been hard to spot <br>
+        amongst the grass, your eyes bleary from birth. <br>
+        The two of you sat beneath the bush and you cried <br>
+        and you were the most perfect thing I’ve ever seen. <br>
+        Your coat pristine, not yet stained with the thick <br>
+        clay soil that will dye your hooves russet. <br>
+        Your mother is deformed, but not you, not yet. <br>
+        With little regard for fragility or fear I held you, <br>
+        so new you didn’t understand danger, only <br>
+        looked at me with those eyes, legs too weak <br>
+        to hold you up. I tried to teach you to be mean, <br>
+        to demand from her what you needed. Your breath <br>
+        smelled like nothing at all. <br>
+        What I wanted for you was colostrum, <br>
+        fresh from your mother, who was crying too. <br>
+        Not because I touched you, <br>
+        but because you had not drunk. </p>
+    </section>
+
+    <hr></hr>
+
+    <section id="Prison_Architecture">
+        <h2 class="title">Prison Architecture</h2>
+        <p class="author">Tyson Lewis</p>
+        <img src="https://live.staticflickr.com/65535/55626855540_d70c85d90a_b.jpg" alt="music sheet page 1" width="500px">
+        <img src="https://live.staticflickr.com/65535/55626646629_f76d52c166_b.jpg" alt="music sheet page 2" width="500px">
+        <img src="https://live.staticflickr.com/65535/55626855435_0359a0834f_b.jpg" alt="music sheet page 3" width="500px">
+        <img src="https://live.staticflickr.com/65535/55624794280_313f58664c_w.jpg" alt="drums">
+        <img src="https://live.staticflickr.com/65535/55624580954_db0f37843f_w.jpg" alt="prison architecture written in front of a deep orange background">
+        <h3>Listen to Prison Architecture here </h3>
+        <p>Prison Architecture is dedicated to fellow students who are currently incarcerated at Western Correctional Center for Women.</p>
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/AV7_-qTQi-w?si=jCfrsF9Q7pfnAxWT"
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <hr></hr>
+
+    <section id="Snowy_Footprints">
+        <h2 class="title">Snowy Footprints</h2>
+        <p class="author">Trevor Nail</p>
+        <p class="indent">I felt in my hands the frizzled strands of the end of her hair. Although this was the part of her hair that had been dyed years ago, dam aged beyond repair, it was still soft enough to satisfy my needs. I turn over  in her bed, which is more comforting than any piece of furniture I’ve ever  laid on, and I look out the window directly next to me. The light of day  has just creeped over the horizon and I see below that there is snow on  the ground. We suspected there might be snow, but after getting carried  away last night, we completely forgot that I may be stuck here all day. I lay  back down and reach gently over her soft sleeping body for the television  remote. I turn it on and put on some miscellaneous gentle piano music,  knowing I want stimulation, but that I also don’t want to wake her. <br>
+
+        <p class="indent">As the piano chords begin to create a fragile, yet undeniable energy  in the room, she shifts in her sleep, rolling away from me. As she settles  into a more comfortable position, the blanket falls off her back, exposing  the pale canvas of her skin. I reach over with my fingertips, as if they’re  paintbrushes, and begin to draw circles on her back. Every downstroke  was in time with the screen’s music. The melody elicits the same kind of  feeling I have when I touch her skin. It’s a warmth I can’t quite reach. I felt  as if I was experiencing something important to life itself here. This must  be one of those things that causes human beings to fight for life. After a  couple minutes of this, I move my hand away, and she impulsively reaches  her small hand in the air and waves for two strokes before letting unconsciousness take it back down. She’s either subconsciously communicating  with me or she’s been awake this whole time, just enjoying affection. So I  keep touching her back because, regardless, it’s what she wants. <br>
+
+        <p class="indent">I lean in closer to her and I catch a whiff of her hair. I scoot closer yet again, just close enough that the edge of my nose can reach the  fullness of her blonde waves. I close my eyes and I’m transported to the  womb. I am nothing but a child, holding onto the warmth and sensations  of femininity. Feeling Oedipal in thought, I pull myself away from her  to examine something other than her beauty. I don’t want to look into  a screen, and so I stand up and look at myself in the mirror. Naked, sad  looking, and, honestly, strange, I wonder how I could be welcomed into  such a special place that has been curated and looked after by a person  filled with the divine feminine. The piano stops; the end of the first song. The one that starts up now is somber; emotions can be felt easier through  this kind of sound. <br>
+
+        <p class="indent">I look at the shape of my body, my muscular legs, my strange  torso, my scraggly facial hair, and my bulging Adam’s apple. I realized at  this moment that men are ugly. Maybe not all men, but I certainly am.  Perhaps we’ve gotten it all wrong. What is a (straight) man’s life for if not  to admire the feminine, the beauty that we cannot be? I lay down on her  bedroom floor and looked at the ceiling fan. As it spins, I began to wish  that I had been born into a woman’s body. Masculinity isn’t all it’s made  out to be, and if anything, it is just a tool. A tool for what? <br>
+
+        <p class="indent">It is at this moment that I stand up quickly, still trying to avoid  making large or abrupt sounds, and I begin to put on my clothes. Once I’m  layered up, I walk down the stairs into her kitchen. I begin to make coffee,  and while the water boils, I search for a shovel for the snow. I find one on  her back porch, and I turn around to the open door and see her little bea gle sitting at the edge of the door, waiting for my attention. I walk over to  her and kneel down, noticing her paw dangling in the air, a sign of sadness  that can only be treated by gentle love. <br>
+
+        <p class="indent">“Hey, Lila-Girl,” I say as I kneel down to pet her. After a moment, I  realize another reason she may be standing here. <br>
+
+        <p class="indent">“Do you want to come use the bathroom, or are you afraid of the  cold snow?” <br>
+
+        <p class="indent">She just stares innocently up at me. She doesn’t want to be cold. “Okay, Lila, well, you gotta use the restroom somehow.” <br>
+
+        <p class="indent">So I stand back and pick up the shovel. I walk off the porch and  into the yard where I begin to clear out an open space in the grass. I walk  back to Lila and I pick her up. She squirms a little at first, probably due to  her needing to pee, but then I place her in the freshly made clearing. She  immediately begins to pee, and, upon finishing, turns all around to see if  there’s a way to move that doesn’t involve walking in the snow. There isn’t,  so I just pick her up again and walk her back inside. <br>
+
+        <p class="indent">By the time we got back in, the water had been boiled and I made  two cups of coffee. I walked them carefully upstairs and then entered  her room again. She was still asleep, but the sound of the door opening  made her reveal her deep blue eyes to me. In a flash of consciousness, she  realized that I had brought her coffee, and she closed her eyes again, but  whispered a subtle and liberating “Thank you.” I smiled and placed the  mug on her side table. The music still created a blanket of atmosphere  that hung over the room like a warm and dull lamp. I drank my coffee as  quickly as possible, then walked downstairs and out the front door. I began shoveling snow as efficiently as I could, making a path for her to safely  get to her car and drive away should she need to. I figured that perhaps  this is what makes being a man a good thing. As I labored, I tapped into  what must have been a deeply historical motivation; with every exhausting  upward stroke of the shovel, I would look back and up into the window of  her room.</p>
+    </section>
+
+    <hr></hr>
+
+    <section id="Our_House">
+        <h2 class="title">Our House</h2>
+        <p class="author">Andaluna Malki</p>
+        <p class="indent">When they arrive at the sliding glass door, absolutely everything  begins to look, well, a bit futile. Their fingers lick at the panes. The nails  that never stopped growing itch at the glass. We had it reinstalled about  seven months before the Event took center stage. I thank someone for the  timing. I mourn the loyalty the door had in my life. With her never replaced hinges and wheels, nearly 19 years of dog nose smears, and muddy  handprints on its history, how could I not? </p>
+
+        <p class="indent">The sky is a clear blue behind the decaying heads of about 12-17  Lame Brains. Zombies. I could’ve used Roamers like one on the show, but  it made me too creeped out. Lame Brains sounds like a mob from an over ly-saturated flash game. They moan and groan the most annoying tunes. I  wish they could at least have some harmony. </p>
+
+        <p class="indent">I grab a stool and cover the windows with sheets. I never realized  how many fitted sheets we had until I was stapling a fifth one to the bot tom of another’s curving elastic. Before I finish nailing the last corner to  the floor, I grab a bag of rambutans. </p>
+
+        <p class="indent">The space between the Lame Brains is 5 inches. 2 of those are  glass. I know - hefty door.  </p>
+
+        <p class="indent">I look up to them. Most don’t even notice. About three from the  side limp towards me.  </p>
+
+        <p class="indent">I dig my thumb nail into the red spiny skin. I break it open to  reveal the white fleshy fruit inside. I pop the morsel, pit and all, into my  mouth. I chew over eagerly, quietly growling back. I use my fingers to pick  the flesh out of my teeth, then feed it back in. The wooden outer crust  of the pit sticks to some of the fruit’s chunks. I don’t bother to take those  pieces out.  </p>
+
+        <p class="indent">After I spit the pit, sucked and bit clean of fruit, into my hand, I do  another round of staples around the sheets. I hang a curtain of cans filled  with coins and rocks. I never bother looking at those poor souls again until  I drag their unmoving carcasses to my monthly burn pile.  </p>
+
+        <p class="indent">It started slower than you would think. It’s like the parasites- no,  maybe it’s a virus. I don’t remember. It’s like it wanted to watch us scramble for plans A-Z and vitamin C.  </p>
+
+        <p class="indent">My mom and I wanted to stay home. That was how we were going  to get through this. We already had a fenced-in property. We reinforced it with steel rods, cut into spikes. We set noise traps in the small forest outlining our land.  </p>
+
+        <p class="indent">I let go of Mom about two weeks ago. She got sick. Flu, something  else - whatever it was, it took her hard. I learned how to only need sleep  every other night. Her last week of words didn’t make sense. Finally, I  coaxed a creaking “I love you” out of her 8 days before I slammed the door  on her neck. I just couldn’t help but wonder if she might have more life in  her eyes if she just turned. She didn’t.  </p>
+
+        <p class="indent">It has now been just me in our big and empty house. My home. I  have reorganized the bookshelves 4 separate times and two consecutive  times. I have made my room look like each cover of the home magazines  we kept in the closet for years and years.  </p>
+
+        <p class="indent">I haven’t gotten the trash out of the yard. I guess now it’s too late  even to do one last lap. I know the yard would never be adorned with cushions torn by dogs or empty Tupperware containers turned to chew toys again. Call me sentimental. Call me a teenager in the apocalypse. I don’t care. </p>
+
+        <p class="indent">I curl up in my mother’s bed. The window to my left faces directly  into the yard. I see a tree has knocked over the fence, and more stupid, idi otic dumb brains are ungracefully flooding the yard. I get under all three  blankets and pull them up to my nose. I inhale my mother’s smell, wiltful and warm. Dog must underlaying it all. </p>
+
+        <p class="indent">I wake up to see darkness outside. There is an even more sinister shade from the yard, a sea of heads with a somewhat gravitational force pulling them toward my entry. I sit out of bed and make my way to the  glass door. I rip the sheets from their nails and staples and stare at each face, knowing they only want to get in. I would like to see if I should let  them.</p>
+    </section>
+
+    <hr></hr>
+
+    <section id="GRIEVANCE">
+        <h2 class="title">GRIEV_ANCE</h2>
+        <p class="author">Ruby Karyo</p>
+        <p>What is with me trying to pretend to feel what’s not there <br> 
+           What’s with this internal lie? Although I know it is true </p>
+
+            <p>Sunk in depression of pure madness <br>
+            Mind evaporating like the vapor wind  </p>
+
+            <p>Dreaded like locks  <br>
+            Unable to be coerced smooth </p>
+
+            <p>My heart always lied to him. <br>
+            He knows  </p>
+
+            <p>Still trying to keep the family flame <br>
+            Like these sentiments of mine  </p>
+
+            <p>I despair.  <br>
+            The universe, hear me. </p>
+
+            <p>Rivers droughting, <br> 
+            Waters, hear me.  </p>
+
+            <p>What shall it profit a woman to lie in love and open her legs to  feel even? <br>
+            No words, no amount of gesture can keep this lie going.  </p>
+
+            <p>How can I breathe?  <br>
+            How can I survive this hurt? </p>
+            
+            <p>Who will save me? <br>
+            Who will come and feel me what has been traumatized? </p>
+
+            <p>How can I leave knowing we both need each other’s situations <br>
+            Stuck in each other’s disguise, not his but especially mine </p>
+
+            <p>He is okay if I don’t feel or <br>
+            love him the same way.  </p>
+
+            <p>How could he? <br>
+            We both know he has nowhere to go. </p>
+
+            <p>LIES, I tell myself <br>
+            So, I take the shots fired in my soul. </p>
+
+            <p>Traveling to the unknown <br>
+            He wants to go in </p>
+
+            <p>Take me when either or  <br>
+            To satisfy his belonging to a family he had long broken and has been  breaking. </p>
+
+            <p>And now I am so broken <br>
+            No healing can transform these wounds </p>
+
+            <p>No flowers, money, gifts, or houses can keep me. <br>
+            I am far gone from being his air. </p>
+
+            <p>Far gone, he might not be able to breathe without our presence <br>
+            But my vagina cries, bleeds when he is inside of me. </p>
+
+            <p>Wishing I had another  <br>
+            Without this guilty attack pleasure of mine </p>
+
+            <p>Then, when he is done <br>
+            I feel void  </p>
+
+            <p>Too Late to love him again <br>
+            To take these consistent lies to the grave </p>
+
+            <p>It killed my heart <br>
+            Not the cheating </p>
+            
+            <p>But the lies  <br>
+            With us, I am vanished. <br>
+            Feeling violated  </p>
+
+            <p>He only sees and feels the physical<br>
+            The spiritual dead with his remains  </p>
+
+            <p>I need air  <br>
+            I need air </p>
+
+            <p>Breathe  <br>
+            Breathe</p>
+            
+            <p>I am in a coma of heartbreak  <br>
+            I never made it out alive <br>
+            BUT,  <br>
+            BUT, </p>
+
+           <p>BUT.</p>
+    </section>
+
+    <hr></hr>
+
+    <section id="Ode_to_Cicadas">
+        <h2 class="title">An Ode to Cicadas in the Summer Heat</h2>
+        <p class="author">Piper Gross</p>
+        <p>The cicadas wait <br>
+        For the sun to make their deafening call <br>
+        Their voices build <br>
+        Joined by others in the dappled leaves <br>
+        Calls reverberate but haven’t crescendoed into one continuous melody <br>
+        The cloud cover of summer thunderstorms kept them sleeping <br>
+        And the humidity amplifies the resonance of their call Becoming all-encompassing <br>
+        Only a cool breeze <br>
+        From the understory of the surrounding forest breaks their spell</p>
+        <img src="https://live.staticflickr.com/65535/55624504683_51c3971d6e_n.jpg" alt="four cicadas">
+    </section>
+
+    <hr></hr>
+
+    <section id="Solar_Systems">
+        <h2 class="title">Solar Systems</h2>
+        <p class="author">Ivy Sauter-Sargent</p> 
+        <p class="indent">The dancing girls and glamour boys surround the woman with  moons in her ears. She sits alone at a table, her head hung with intoxication. The world around her sags down. Loose music earworms towards  her. She glances up to catch a singer as glorious as a rising angel. All eyes  weighed down with eyeliner and legs. The singer, silky, gorgeous, and  clean stares at the woman. The woman is entrapped. </p>
+
+        <p class="indent">The moon woman waits to see if there will be an end and once  her eyes are shut and there are no signs of the club stopping she leaves,  unwillingly. She stops to look at the singer. The singer blinks slowly as if it  were a wink. Her eyelashes seem to reach across the room and brush the  woman’s cheeks.  </p>
+
+        <p class="indent">The moon woman’s building seems to be crumbling towards the  ground, its plaster cracking and hiding mice away in holes. As she makes  her way up the stairs she pulls confetti out of her hair, abandoning it on  the way up, leaving a trail of stars. She looks out her window seeing the  ocean pushing at the shore, trying to find a foothold in the silken sand.  The moon woman, not wanting to disturb the world around her, stumbles  through the shadows. A breeze slips in from the ocean and catches her as  she descends to her bed, a land of linen clouds and dreams. </p>
+
+        <p class="indent">The moon woman wakes with the singer plastered in her eyelids.  She rolls her ankles, her neck, her wrists, trying to shake off the glorious eyes of the singer. Her coffee is bitter, she doesn’t speak as she goes  through her day.  </p>
+
+        <p class="indent">The glamour girls and dancing boys surround her again that night.  She does not know their names, she does not ask, her eyes are glued to the  stage. The singer appears again.  </p>
+
+        <p class="indent">The moon woman waits. Watches that woman’s eyes as they blink  at her. The singer leaves her post, coming down to the crowd. She swims  through them. Her bright yellow dress, a sun in the night, flowing through  the room towards the moon woman.  </p>
+
+        <p class="indent">The singer leans down. Her lips brush the moon woman’s ear. </p>
+        
+        <p class="indent">“You should not like my eyes.” Her voice is hot and burning against  the moon woman. </p>
+
+        <p class="indent">The moon woman stares up, the singer’s eyes drip from her sockets  like the sun through silk. </p>
+    </section>
+
+    <hr></hr>
+
+    <section id="music_muse">
+        <h2 class="title">music/muse</h2>
+        <p class="author">Will Finch</p>
+        <img src="https://live.staticflickr.com/65535/55624371196_40e78337f1_w.jpg" alt="art piece">
+    </section>
+
+    <hr></hr>
+
+    <section id="I_fear">
+        <h2 class="title">I fear</h2>
+        <p class="author">Andaluna Malki</p>
+        <p>I fear the day is here. <br>
+        After greens and youth <br>
+        reds and the wind’s colorful <br>
+        whisperings. I feared their morphing. <br>
+        I feared the drop. My window panes <br>
+        of other worlds where colors were <br>
+        the only existence. <br>
+        Light became my favorite <br>
+        humming as she pulled cascaded <br>
+        through the branches stained glass <br>
+        on my bed sheets. <br>
+        And how they went so willingly <br>
+        with the gusts from whatever has a chest so full and large.<br>
+        And how I thought my panes will always be full. <br>
+        The light will always hum. <br>
+        Now it is gray. The light. The panes. <br>
+        The wind rattles growing fingers <br>
+        against the dark into my glass. <br>
+        My room has risen into the fog. <br>
+        My small lungs paint the glass, <br>
+        matching the sky. I see deep <br>
+        into the dry valley with <br>
+        its crunch and brown carpet <br>
+        where lightning bugs will hatch in the summer.</p>
+    </section>
+
+    <hr></hr>
+
+    <section id="GIRL">
+        <h2 class="title">GIRL</h2>
+        <p class="author">Ruby Karyo</p>
+        <p class="indent">It never used to be that difficult; things were much easier, and I  just failed to see it that way. Looking back, I shed tears. My soul cries.  Those times when we used to walk, talk, and laugh like little kids, and we  would say hi to everyone on the streets, and we would want to be that  (particularity) Girl in the neighborhood who we thought had everything  she’d ever wanted. We see it in our dreams and sometimes wonder if we’ll  ever get there. Then, when we got there, ‘wishing,’ we never asked to be  that Girl. The price we had to pay, the trauma she’d had to endure without us knowing the smiles on her cheekbones, was the silent death of her  heart. And when she told her story, I realized all along she was me.</p>
+        <img src="https://live.staticflickr.com/65535/55624793855_997e246b15_m.jpg" alt="drawing flower box in front of a window">
+    </section>
+
+    <hr></hr>
+
+    <section id="SNOWBALLIN">
+        <h2 class="title">SNOWBALLIN</h2>
+        <p class="author">Juliet</p>
+        <p>LYRICS: </p>
+
+        <p>I ain’t nowhere near alright <br>
+        I don’t even know my name <br>
+        I can’t change to save my life <br> 
+        And I’ve been this way for days <br>
+        And I’ve been awake for days <br>
+        I’ve been high for fuckin days </p>
+
+        <p>I don’t have a good solution I don’t even know the issue <br>
+        I turn to an ocean every time I start to miss you <br>
+        I’m a wreck emotionally, all the drugs I misuse <br>
+        taking their toll, I gotta let go but I don’t want it <br> 
+        So haunted, emotional avalanche, I’m snowballin <br>
+        Never had a crowd, only name up on the roll call and <br> 
+        I was never loud enough to tell em what was wrong with me, botherin me <br>
+        Had a dad but I ain’t had no one fatherin me </p>
+
+        <p>Harder to see, harder to leave with the hindsight now <br>
+        Blindsided and knocked down <br>
+        I’m not round no more, I skipped town <br>
+        You would follow in my footsteps <br>
+        If you knew what was good for you </p>
+
+        <p>There’s a shadow on my heart, it’s a black hole <br>
+        I give in to fate, cuz you never know <br>
+        I’m full of complaints, unexpressable <br>
+        8 days a week I stay stressin oh no <br>
+        You know I hate to be the bearer of bad news <br>
+        I want more from life but beggars can’t choose <br>
+        Is there more to life or are we that doomed? <br>
+        I hate taking my time, I’m impatient as my mom <br>
+        I can’t think when the lights on, or think for myself when I feel like  the lights gone <br>
+        I try feelin myself but I’m used to the judgment <br>
+        Wanna self destruct but I can’t do the repercussions </p>
+        <img src="https://live.staticflickr.com/65535/55623367202_44c04414a6_n.jpg" alt="white hand silhouette in front of picture of backyard">
+        <h3>Listen to SNOWBALLIN here</h3>
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/5FrCVQcqsdE?si=u9JAQ12FtY1W_VO2" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe>
+    </section>
+
+    <hr></hr>
+
+    <section id="Dancing">
+        <h2 class="title">Dancing to "In My Room" by Frank Ocean</h2>
+        <p class="author">Kai Meyer</p>
+        <p class="indent">You’re lying on your bed, arms sprawling, pants off. Your chest is  sinking into the pull of the mattress, feet still tethered to the floor. “In My  Room” comes on. </p>
+
+        <p class="indent">A systematic beat. A little man knocking on the inside of a hollow  heart, awakening the rust that has thickened. </p>
+
+        <p class="indent">A chin nod, a sway, a side to side, a body begins the slightest  movements. The stress of a day held in the heel’s tapping, waxy resistance  dripping off with each beat. </p>
+
+        <p class="indent">A small curl of anticipation, a fluttering within the nervous system.  Ocean’s voice floods the speaker, “No sleeper seats, that’s a mattress. No  sleeper seats, that’s a mattress,” the beat expanding. An electric ripple of  sound forming in the air. </p>
+
+        <p class="indent">The slightest pause at the end of his words, bridging the electricity  between you and computer currents, lifting your left arm. Left fingers be gin tapping and tracing the air with reflections of Ocean’s words. The song  works its way through your pointer finger, down your forearm, around  your elbow, as you begin reaching up and up. </p>
+
+        <p class="indent">“And I think you made for the life I lead,” holding your hand, as  you slip blindly into the room. A safety net created in the four walls of  your room. </p>
+
+        <p class="indent">A free dance of exhaustion turning to expansion, “Got this lust for  life in me.” In the weight of your two feet, circular steps follow the flow of  the beat, knees slightly bent, waiting for the joints to explode. </p>
+
+        <p class="indent">Neck rolling to quick lyrics, fingers darting from side to side, fol lowing Frank’s loose tongue, speaking to empty emotions of the day’s dis appointment. Letting it all wash through a drag of rhythmic release with  looping synth lurking in the background.</p>
+
+        <p class="indent">“Quit being violent with me. Quit being violent with me. Quit be ing violent with me” </p>
+
+        <p class="indent">Two beats, frozen, holding your breath, waiting for the break, look ing down at bruised legs, “You make me violent.” </p>
+
+        <p class="indent">Sweeping limbs across the room, knees popping, shoulders rolling  back, a day’s exhaustion reclaimed in the span of two minutes. </p>
+
+        <p class="indent">“My room, my room, my room with me.” </p>
+
+        <p class="indent">Shoulders swaying once more, head bobbing, feet tapping in a  small revolution. Steps taken towards the rest of the day and a quiet peace  between the eyes. </p>
+
+        <p class="indent">“I guess I can’t state my feelings too soon, I don’t know you. And I  can’t put no threats in the air.” </p>
+
+        <p class="indent">Cuts off.</p>
+    </section>
+
+    <hr></hr>
+
+    <section id="Delicate_Things">
+        <h2 class="title">Does God make delicate things just to watch them get hurt?</h2>
+        <p class="author">Anna Sauerbrey</p>
+        <p>I am learning. You were born breathing <br>
+        and that is the tragedy. Just before ten, <br>
+        third and final, you slipped into the world <br> 
+        quiet and still. You were warm  <br>
+        when I found your body wet and bloody, <br>
+        amniotic sac vacuum sealed to the fur  <br>
+        of your upper body. It surrounded your head,  <br>
+        thin and membranous, scarlet red veins  <br>
+        and pink capillaries from the concentration  <br>
+        of blood. Your placenta was on the ground <br>
+        next to you, fluids seeping into the straw, a siren <br>
+        song for predators just like you— <br>
+        unmoving and iron rich.</p>
+    </section>
+
+    <hr></hr>
+
+    <section id="About_Contributors">
+        <h2 class="title">About the Contributors</h2>
+        <p><span class="author_highlight">Bella Sosa</span> has been writing poetry since her freshman year of high school where  she figured out she had a natural talent for it. She has always found that poems  can display all the things she can never say out loud. All of the pent of sadness or  rage or anything of the sort. She plans on majoring in creative writing during her  time here at Warren Wilson College. </p>
+
+        <p><span class="author_highlight">Anna Sauerbrey</span> is a junior studying Sustainable Agriculture and Creative Writing.  They work on the farm crew, and much of their writing is inspired and informed  by their work. They also have a passion for fiber arts and like to bring their knitting  with them everywhere.  </p>
+
+        <p><span class="author_highlight">Rowan Ts’eh Berry-Foster</span> is living proof a good childhood can still produce  poetry. They are awaiting their big break, and hope it comes in the form of a shiny  river rock.  </p>
+
+        <p><span class="author_highlight">Maddy Clements</span> is a sophomore who writes poetry, screenplays, and short stories.  They are fond of autumn and have- despite being easily scared- recently begun to  enjoy horror stories. </p>
+
+        <p><span class="author_highlight">Ruby Karyo</span> was born and raised in Ghana in the conditions of poverty and riches.  Karyo dreams of being a renowned author and using her voice to build schools in  poor countries globally. </p>
+
+        <p><span class="author_highlight">Piper Gross</span> is a sophomore at Warren Wilson College. They are a visual artist who  specializes in scientific illustration with a focus on botanicals. Their work is inspired  by their childhood spent exploring the woods and muddy creek bed of their family's homestead in the Appalachian mountains of Western Maryland. </p>
+
+        <p><span class="author_highlight">Eliot Heminway</span> has been writing poetry since his father introduced him at age  fourteen. Aside from writing poetry, he writes long-form and flash fiction and sincerely enjoys writing grammatically incorrect analyses (yeats especially). Eliot also  loves to cook for people and go biking in the woods. </p>
+
+        <p><span class="author_highlight">Tyson Lewis</span> is a senior Music and Creative Writing double major studying at War ren Wilson College. Focusing on Jazz, Surrealism, and the generally avant-garde. Original solo composition for drum kit Prison Architecture is dedicated to fellow  students who are currently incarcerated at Western Correctional Center for Women.</p>
+
+        <p>The US has the Highest population of incarcerated people in the world. There is a  seventy percent recidivism rate within five years of regaining freedom. Seventy six percent of incarcerated people report forced labor at threat of additional punishment. Abolish Prisons. </p>
+
+        <p><span class="author_highlight">Trevor Nail</span> is an English and Philosophy major at WWC. He is kind of a dweeb,  but I love him and he is also such a sweat in philosophy classes. He also likes bicycles and running shoes. </p>
+
+        <p><span class="author_highlight">Andaluna Malki</span> creative writing senior, writes on the skin they shed and store in a  dark, cold place. Andaluna Malki loves you.  </p>
+
+        <p><span class="author_highlight">Ivy Sauter Sargent</span> is a writer from Northern Wisconsin. She has been writing  since middle school and particularly enjoys genre and form bending writing.  </p>
+
+        <p><span class="author_highlight">Will Finch</span> is a junior art student, who loves all things fiber arts. This piece was  inspired by his love of music, and follows his musical interests throughout his life,  spiraling in on itself as it travels through time. Each section represents one of seven artists, each an important musical inspiration throughout his life. </p>
+
+        <p><span class="author_highlight">Juliet</span> is an electronic emo rap musician from Florida living here in Asheville. Inspired by artists like Juice WRLD, Frank Ocean and Bon Iver. </p>
+
+        <p><span class="author_highlight">Kai Meyer</span> is a junior at Warren Wilson, studying Art and Communications. They  are an absolute fiend for any and all music, especially Frank Ocean. A question  they frequently ponder is: are you a Channel Orange or Ivy type of gay? Feel free  to let them know.</p>
+    </section>
+
+    <hr></hr>
+
+    <section id="About_Peal">
+        <h2 class="title">About The Peal</h2>
+        <img src="https://live.staticflickr.com/65535/55627963844_85b7012d3c_b.jpg" alt="drawing of a typewriter" width="150">
+        <p>Peal is a student-run literary magazine published annually and funded by  Warren Wilson College. Peal accepts submissions of original poetry, fiction,  drama, creative non-fiction, and visual art from students, staff, and faculty.  Send questions, comments, and concerns to peal@warren-wilson.edu. </p>
+
+        <p>The Peal aims to enrich the creative community at Warren Wilson College  by providing opportunities for publication and performance. </p>
+
+        <p>COPYRIGHT © 2024 Peal <br>
+        Upon publication, the rights return to the authors.</p>
+    </section>
+    </div>
+
+    <script>
+        const sideBar = document.getElementById("Vol34-sidebar");
+
+        function peal_open() {
+        sideBar.style.display = "block";
+        }
+        function peal_close() {
+        sideBar.style.display = "none";
+        }
+    </script>
+
+    <footer>
+        <img src="https://live.staticflickr.com/65535/55626424911_1246c9f1e8_b.jpg" alt="back cover of The Peal" width="500px">
+    </footer>
+</body>
+</html>
