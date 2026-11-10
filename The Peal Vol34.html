@@ -9,11 +9,12 @@
 </head>
 
 <body>
+    <!--This sets up the look of and the action of the button that opens the sidebar-->
     <div class="peal-container peal-teal">
     <h1><button class="peal-button peal-open-button" onclick="peal_open()">☰</button></h1>
     </div>
 
-    
+<!--This div contains the hrefs for each of the options in the sidebar, including what is used to navigate back to the homepage-->
     <div class="sidebar bar-block border-right" style="display:none" id="Vol34-sidebar">
         <button onclick="peal_close()" class="sidebar-link large">Close X</button>
             <a href="The Peal Homepage.html" id="back-to-homepage">Back to Homepage</a>
@@ -67,6 +68,7 @@
             <a href="#About_Peal" class="sidebar-link peal-button">About The Peal</a>
     </div>
 
+    <!--This is the cover and info on the first page of the magazine-->
     <header class="front_page_info">
         <img src="https://live.staticflickr.com/65535/55626424806_58281996b2_b.jpg" alt="Picture of the front cover of the Peal Fall 2024-Spring 2025 edition" width="500">
         <h1>The Peal</h1>
@@ -77,9 +79,11 @@
             <p>Swannanoa, NC</p>
         </section>
 
+        <!--Added seperating lines between each story and/or general section in order to make sure there is a clean end point before the next section starts-->
         <hr></hr>
     </header>
 
+    <!--Div that contains all of the peal, and starting section giving credit to those who worked on the magazine-->
     <div class="peal-container">
     <section class="contributors_page">
         <h2>The Editors</h2>
@@ -103,6 +107,7 @@
 
     <hr></hr>
 
+    <!--Table of contents with two columns, one for titles and one for authors (if applicable), each title has <a href> so that people can click straight to that story-->
     <section class="table_of_contents">
         <table>
             <caption>Contents</caption>
@@ -234,6 +239,7 @@
 
     <hr></hr>
 
+<!--Section for the Letter from the Editors, for each of the written sections (like the letter from the editors and works of writing) there is an <h2 class="title"> for the title, a <p class="author"> for the author name, and then <p> for the actual writing. Classes for title and author are for later styling in CSS-->
     <section id="Masthead">
         <h2 class="title">Letter from the Editors</h2>
         <p>Welcome to the 2024-2025 edition of The Peal. This semester has been full of grief as we have all faced damage from Hurricane Helene. With its mighty winds, Hurricane Helene blew through Swannanoa, but that did not stop the creative minds at Warren Wilson. Despite the instability, we, the editors of the Peal, have worked hard o assemble this collection.</p>
@@ -244,6 +250,7 @@
 
     <hr></hr>
 
+<!--For poems I used a new <p> for every stanza and then had <br> to format the lines-->
     <section id="Helenes_Whisper">
         <h2 class="title">Helene's Whisper</h2>
         <p class="author">Bella Sosa</p>
@@ -319,6 +326,7 @@
 
     <hr></hr>
 
+<!--For poems that only one stanza there is only one <p> with <br> to format the lines, there are some written pieces that have accompanying photos I used the typical <img> with linked srcs and alts-->
     <section id="Grew_up_hard">
         <h2 class="title">Grew up hard, fell off harder</h2>
         <p class="author">Anna Sauerbrey</p>
@@ -339,11 +347,12 @@
         It is shoved in the bottom of a cabinet <br>
         In the corner of the room, out of sight <br>
         And waiting for some impossible future. </p>
-        <img src="https://live.staticflickr.com/65535/55620393304_a12e2ed49b_n.jpg" alt="A clarinet breaking down">
+        <img src="https://live.staticflickr.com/65535/55620393304_a12e2ed49b_n.jpg" alt="Drawing of clarinets in various stages of breaking down">
     </section>
 
     <hr></hr>
 
+    <!--Whether or not I styled an indent into the <p> was determined by how it was formatted in the physical magazine, for ones (like this one) that do I made a class for the indent and used CSS to format the indent into the beginning of each <p>-->
     <section id="House_of_Straw">
         <h2 class="title">House of Straw</h2>
         <p class="author">Rowan Ts'eh Berry-Foster</p>
@@ -359,6 +368,7 @@
         
         <p class="indent">He told me the most beautiful part of my body was my shoulders.  My parents loved him. I got terribly drunk and ruined a game of spades  with my family one night, and he put me to bed like I was a small, disgruntled child. This too I liked, the five years that lay between us. </p>
         
+        <!--This story specifically also had story breaks with these symbols, in order to properly format the break I made a new class to use later in CSS-->
         <p class="story_break">𓃦𓃥</p>
         
         <p class="indent">My parents were the same age as Conchobhar and I when they  met. My mother was twenty-four, and my father was nineteen. My mother  was married to a corrupt public defender who she had a child with. They  met at a poetry competition where my mother read Ginsberg. She won  first, and my father second. He waded across the room, murmured some thing about her beauty and brilliance, reached for her hand, encased it in  his, and kissed his own knuckles. That motherfucker. </p>
@@ -369,6 +379,7 @@
         
         <p class="indent">He came back, explanations ready. Mom revealed a joint, but he  shrugged something about probation. There was nothing else to do. She  took his hand and put it low on her stomach. She’d never liked kissing.  She took his hand and put it low, low on her stomach. Held it there. The  room was dark. “This,” she said, “is my favorite part.” </p>
         
+        <!--The story also had sub-sections that has subtitles which I used <h3> for and also classed as a subtitle for later CSS styling-->
         <h3 class="subtitle">HOUSE OF STICKS</h3>
         
         <p class="indent">Conchobhar left for Colombia. My mother urged me to stay in  touch with him. We texted some, and then we didn’t. One night in late  January, I called him from outside a friend’s apartment, drunk and love sick, eager to dip my head into the Lethe and forget everything but his  hold on my ankle. He didn’t pick up. </p>
@@ -422,6 +433,7 @@
 
     <hr></hr>
 
+    <!--Since there was very specific styling for one of the lines in this poem, I wrapped the line in a <span> and used an id in order to make a seperate styling for it-->
     <section id="Kits">
         <h2 class="title">Kits</h2>
         <p class="author">Maddy Clements</p>
@@ -441,8 +453,8 @@
             If hunger drives you raving <br>
             The rabbit beat you to the meal <br>
             hollow, fearful, manic,  <br>
-            <span>desperate, unfed, craving… </span><br>
-            <span>until </span></p>
+            <span id="extra-indent">desperate, unfed, craving… </span><br>
+            until</p>
 
         <p>the young will not be seen again.  <br>
             buried in ground, then buried in gut,  <br>
@@ -466,6 +478,7 @@
 
     <hr></hr>
 
+    <!--For this poem, the author have specific spacing that I made by treating each line like a seperate stanza-->
     <section id="Boy_Girl">
         <h2 class="title">Boy/Girl</h2>
         <p class="author">Ruby Karyo</p>
@@ -479,6 +492,7 @@
 
     <hr></hr>
 
+    <!--This work is a comic, so it had no written part-->
     <section id="Joyride">
         <h2 class="title">Joyride</h2>
         <p class="author">Piper Gross</p>
@@ -487,6 +501,7 @@
 
     <hr></hr>
     
+    <!--Similar to Boy/Girl there are certain lines that were treated as their own stanzas in order to best represent what was in the magazine-->
     <section id="Coltrane">
         <h2 class="title">What Was it Coltrane?  </h2>
         <p class="author">Eliot Heminway</p>
@@ -518,6 +533,7 @@
 
     <hr></hr>
 
+    <!--The same strategy was used for this poem as the last that was one stanza with no specially spaced lines-->
     <section id="Glory_of_Innocence">
         <h2 class="title">The Glory of Innocence</h2>
         <p class="author">Anna Sauerbrey</p>
@@ -544,6 +560,7 @@
 
     <hr></hr>
 
+    <!--This work is a song, with three <img> are images of the sheet music for the song, and the last two <img> being a photos associated with the song-->
     <section id="Prison_Architecture">
         <h2 class="title">Prison Architecture</h2>
         <p class="author">Tyson Lewis</p>
@@ -554,6 +571,7 @@
         <img src="https://live.staticflickr.com/65535/55624580954_db0f37843f_w.jpg" alt="prison architecture written in front of a deep orange background">
         <h3>Listen to Prison Architecture here </h3>
         <p>Prison Architecture is dedicated to fellow students who are currently incarcerated at Western Correctional Center for Women.</p>
+       <!--This iframe is used to embed the youtube video of the song into the website, in the magazine they used QR codes but I thought it would be best to cut out the middle man-->
         <iframe width="560" height="315" 
             src="https://www.youtube.com/embed/AV7_-qTQi-w?si=jCfrsF9Q7pfnAxWT"
             title="YouTube video player" 
@@ -568,6 +586,7 @@
 
     <hr></hr>
 
+    <!--Styled the same as previous stories that have indented paragraphs-->
     <section id="Snowy_Footprints">
         <h2 class="title">Snowy Footprints</h2>
         <p class="author">Trevor Nail</p>
@@ -594,6 +613,7 @@
 
     <hr></hr>
 
+    <!--Styled the same as other stories that have indented paragraphs-->
     <section id="Our_House">
         <h2 class="title">Our House</h2>
         <p class="author">Andaluna Malki</p>
@@ -628,6 +648,7 @@
 
     <hr></hr>
 
+    <!--Styled structurely the same as the other poems with multiple stanzas-->
     <section id="GRIEVANCE">
         <h2 class="title">GRIEV_ANCE</h2>
         <p class="author">Ruby Karyo</p>
@@ -723,6 +744,7 @@
 
     <hr></hr>
 
+    <!--Structured the same as poems with a single stanza-->
     <section id="Ode_to_Cicadas">
         <h2 class="title">An Ode to Cicadas in the Summer Heat</h2>
         <p class="author">Piper Gross</p>
@@ -740,6 +762,7 @@
 
     <hr></hr>
 
+    <!--Styled the same as other stories that have indents in the paragraphs-->
     <section id="Solar_Systems">
         <h2 class="title">Solar Systems</h2>
         <p class="author">Ivy Sauter-Sargent</p> 
@@ -763,7 +786,7 @@
     </section>
 
     <hr></hr>
-
+<!--music/muse is an art piece and only contains the <img> of the piece-->
     <section id="music_muse">
         <h2 class="title">music/muse</h2>
         <p class="author">Will Finch</p>
@@ -772,6 +795,7 @@
 
     <hr></hr>
 
+    <!--Styled the same as poems with one stanza-->
     <section id="I_fear">
         <h2 class="title">I fear</h2>
         <p class="author">Andaluna Malki</p>
@@ -803,6 +827,7 @@
 
     <hr></hr>
 
+    <!--Structured with an indented paragraph-->
     <section id="GIRL">
         <h2 class="title">GIRL</h2>
         <p class="author">Ruby Karyo</p>
@@ -812,6 +837,7 @@
 
     <hr></hr>
 
+    <!--This is also a song, however the author elected to include the lyrics of the song into the magazine (which I treated like a poem), then has a picture from the video, and lastly the embeded youtube video-->
     <section id="SNOWBALLIN">
         <h2 class="title">SNOWBALLIN</h2>
         <p class="author">Juliet</p>
@@ -865,6 +891,7 @@
 
     <hr></hr>
 
+    <!--Structured the same as indented paragraphs-->
     <section id="Dancing">
         <h2 class="title">Dancing to "In My Room" by Frank Ocean</h2>
         <p class="author">Kai Meyer</p>
@@ -901,6 +928,7 @@
 
     <hr></hr>
 
+    <!--Structured the same as poems with one stanza-->
     <section id="Delicate_Things">
         <h2 class="title">Does God make delicate things just to watch them get hurt?</h2>
         <p class="author">Anna Sauerbrey</p>
@@ -921,6 +949,7 @@
 
     <hr></hr>
 
+    <!--Styled as paragraphs without indents, each author is wrapped in a <span> so that the author name is bold-->
     <section id="About_Contributors">
         <h2 class="title">About the Contributors</h2>
         <p><span class="author_highlight">Bella Sosa</span> has been writing poetry since her freshman year of high school where  she figured out she had a natural talent for it. She has always found that poems  can display all the things she can never say out loud. All of the pent of sadness or  rage or anything of the sort. She plans on majoring in creative writing during her  time here at Warren Wilson College. </p>
