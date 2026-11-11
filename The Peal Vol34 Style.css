@@ -1,7 +1,9 @@
+/*Universal selector in order to have same font applied everywhere*/
 *{
     font-family: Garamond, "Times New Roman", serif;
 }
 
+/*Set of media queries in order to style the size of margins depending on screen size*/
 @media only screen and (max-width: 600px) {
 * {
     margin:0 10px 5px 10px;
@@ -20,12 +22,14 @@
     }
 } 
 
+/*Positioning the open sidebar button to the top left of the page and keeping it there at all times*/
 .peal-open-button{
     position:fixed;
     z-index: 1;
     left:0;
 }
 
+/*Styles the sidebar that opens with the peal-open-button*/
 .sidebar{
     width:20%;
     position:fixed;
@@ -36,89 +40,117 @@
     border-radius: 5px;
 }
 
+/*Styles the links in the sidebar*/
 .sidebar-link{
     display: block;
     font-size: smaller;
 }
 
+/*Styles the back-to-homepage button, made larger than other buttons in order to make it stand out*/
 #back-to-homepage{
     font-size: x-large;
 }
 
+/*Styles the author name at the top of each entry to be bold*/
 .author{
     font-weight: bold;
 }
 
+/*Styles the indent to appear for any paragraph with a class of indent*/
 .indent{
     text-indent: 2em;
 }
 
+/*Styles the story break to be centered*/
 .story_break{
     text-align: center;
 }
 
+/*Styles the line in "Kits" by Maddy Clements that has a set of extra indents*/
+#extra-indent{
+    padding-left: 6em;
+}
+
+/*This makes the authors names bold within "About the Contributors"*/
 .author_highlight{
     font-weight: bold;
 }
 
+/*This styles the entire poem to be bold*/
 #GRIEVANCE p{
     font-weight: bold;
 }
 
+/*This sets the style for all clickable links have <a>*/
 a {
     text-decoration: none;
     font-weight: bold;
     color: black;
 }
 
+/*This sets the style for when any <a> is hovered over, done in order to tell the user that the links are interactable*/
 a:hover{
     background-color: rgb(213, 235, 232);
     border-radius: 5px;
 }
 
+/*This styles the main title of the volume to be centered*/
 h1{
     text-align: center;
 }
 
+/*This styles the info that is on the front page with the title to be on the right of the page*/
 .front_mini_info{
     text-align: right;
 }
 
+/*Syles line on the front page that are bold*/
 .front_info_bold{
     font-weight: bold;
 }
 
+/*This styles any unordered lists to no longer have a marker*/
 ul li::marker{
     content:none;
 }
 
+/*Styles the caption of the table of content to be large*/
 caption{
     font-size:xx-large;
 }
 
+/*Styles the images in the magazine to be in the center of the screen*/
 img{
     display: block;
     margin: 0 auto;
 }
 
+/*Centers any iframes/embedded videos*/
 iframe{
     display:block;
     margin:0 auto;
 }
 
+/*Centers the table of contents*/
 table{
     margin:0 auto;
 }
 
-.peal-button {
+/*Styles the open button for the sidebar in a way that allows it to respond to display size of the screen while still being above and below spefic sizes*/
+.peal-open-button {
     margin:5px;
-    width:40px;
-    height:40px;
-    font-size:large;
+    width:5%;
+    max-width: 45px;
+    min-width: 25px;
+    height:5%;
+    max-height: 45px;
+    min-height: 25px;
+    font-size:60%;
     background-color: rgb(213, 235, 232);
     border-radius: 5px;
 }
 
-.peal-button:hover{
+/*Styles the open sidebar button so that users know that they can click on it*/
+.peal-open-button:hover{
     background-color: rgb(185, 207, 205);
 }
